@@ -14,13 +14,14 @@
       matInput
       type="text"
       [(ngModel)]="name"
+      name="name"
       placeholder="Please enter name"
     />
   </mat-form-field>
   <button mat-raised-button color="primary" (click)="addUser()">
     Add Name
   </button>
-  <mat-list>
-    <mat-list-item *ngFor="let n of nameList">{{ n }}</mat-list-item>
-  </mat-list>
+  <ul>
+    <li *ngFor="let n of nameList">{{ n }}</li>
+  </ul>
 </div>
