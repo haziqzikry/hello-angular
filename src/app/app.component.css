@@ -22,13 +22,3 @@ input {
 .mat-list-item {
   text-align: left;
 }
-
-.green-button {
-  background-color: green;
-  color: white;
-}
-
-.red-button {
-  background-color: red;
-  color: white;
-}
