@@ -16,13 +16,16 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MyNavbarComponent } from './my-navbar/my-navbar.component';
 import { MySideMenuComponent } from './my-side-menu/my-side-menu.component';
 import { MyMainContentComponent } from './my-main-content/my-main-content.component';
+import { TestNavbarComponent } from './test-navbar/test-navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 /**
  * @title Basic buttons
  */
 
 @NgModule({
-  declarations: [AppComponent, MyNavbarComponent, MySideMenuComponent, MyMainContentComponent],
+  declarations: [AppComponent, MyNavbarComponent, MySideMenuComponent, MyMainContentComponent, TestNavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,6 +34,9 @@ import { MyMainContentComponent } from './my-main-content/my-main-content.compon
     MatButtonModule,
     MatInputModule,
     MatListModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
