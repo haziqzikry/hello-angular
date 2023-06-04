@@ -1,12 +1,15 @@
-<div>
-  <!-- string interpolation -->
+<div class="container">
   <h2>{{ title }}</h2>
 
   <mat-form-field>
     <input matInput type="text" [(ngModel)]="counter" />
   </mat-form-field>
-  <button mat-raised-button color="primary" (click)="add()">Tambah</button>
-  <button mat-raised-button color="warn" (click)="substract()">Tolak</button>
+  <button mat-button color="primary" (click)="add()" class="green-button">
+    Tambah
+  </button>
+  <button mat-button color="warn" (click)="substract()" class="red-button">
+    Tolak
+  </button>
   <br /><label>Value: {{ counter }}</label>
 
   <br /><br />
